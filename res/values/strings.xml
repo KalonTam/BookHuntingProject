@@ -12,7 +12,25 @@
     <string name="title_activity_contact">ContactActivity</string>
     <string name="title_activity_about">AboutActivity</string>
     <string name="title_activity_search">SearchActivity</string>
-    <string name="search">Search Books</string>
+    <string name="search_books">Search Books</string>
     <string name="back">Back</string>
+    <string name="search">Search</string>
+    <string name="error_title">Error</string>
+    <string name="error_message">There was an error</string>
+    
+    
+    <string-array name="spinner_items">
+        <item>Accounting</item>
+        <item>Anthropology</item>
+        <item>Communication</item>
+        <item>Criminology</item>
+        <item>Creative Writing</item>
+        <item>Computing Science</item>
+        <item>EASL</item>
+        <item>Early Childhood Education</item>
+        <item>Economics</item>
+        <item>English</item>
+    </string-array>
+    
 
 </resources>

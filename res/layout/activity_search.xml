@@ -8,6 +8,62 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".SearchActivity" >
 
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/back"
+        android:layout_centerHorizontal="true"
+        android:text="@string/search_books"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/txtSearchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnTitle"
+        android:layout_alignParentLeft="true"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/txtSearchAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnSearchAuthor"
+        android:layout_marginTop="33dp" />
+
+    <Button
+        android:id="@+id/btnSearchAuthor"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtSearchAuthor"
+        android:layout_alignBottom="@+id/txtSearchAuthor"
+        android:layout_alignParentRight="true"
+        android:text="@string/search" />
+
+    <Button
+        android:id="@+id/btnTitle"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSearchAuthor"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="44dp"
+        android:text="@string/search" />
+
     <Button
         android:id="@+id/back"
         style="?android:attr/buttonStyleSmall"
@@ -15,15 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="@string/back"
-        android:onClick="clickBack" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/back"
-        android:layout_centerHorizontal="true"
-        android:text="@string/search"
-        android:textSize="30sp" />
+        android:onClick="clickBack"
+        android:text="@string/back" />
 
 </RelativeLayout>

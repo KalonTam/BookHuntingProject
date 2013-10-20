@@ -35,6 +35,7 @@ public class MainActivity extends Activity {
     public void clickContact(View view) {
      	Intent i = new Intent(this, ContactActivity.class);
      	startActivity(i);
+     	
     }
     
     
