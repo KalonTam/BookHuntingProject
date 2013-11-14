@@ -30,29 +30,38 @@ public final class R {
         public static final int About=0x7f090003;
         public static final int Contact=0x7f090005;
         public static final int Search=0x7f090004;
-        public static final int action_settings=0x7f09000c;
+        public static final int action_settings=0x7f090011;
         public static final int back=0x7f090002;
-        public static final int btnSearchAuthor=0x7f09000b;
-        public static final int btnTitle=0x7f090008;
-        public static final int spinner1=0x7f09000a;
+        public static final int btnSearchAuthor=0x7f09000f;
+        public static final int btnSearchGenre=0x7f090010;
+        public static final int btnTitle=0x7f09000c;
+        public static final int genreSpinner=0x7f09000e;
         public static final int textView1=0x7f090000;
         public static final int textView2=0x7f090001;
-        public static final int txtSearchAuthor=0x7f090009;
-        public static final int txtSearchTitle=0x7f090007;
+        public static final int txtAmaPrice=0x7f09000a;
+        public static final int txtAuthor=0x7f090007;
+        public static final int txtDcPrice=0x7f090008;
+        public static final int txtPubDate=0x7f090009;
+        public static final int txtSearchAuthor=0x7f09000d;
+        public static final int txtSearchTitle=0x7f09000b;
         public static final int txtTitle=0x7f090006;
     }
     public static final class layout {
         public static final int activity_about=0x7f030000;
         public static final int activity_contact=0x7f030001;
         public static final int activity_main=0x7f030002;
-        public static final int activity_search=0x7f030003;
+        public static final int activity_results_detail=0x7f030003;
+        public static final int activity_results_screen=0x7f030004;
+        public static final int activity_search=0x7f030005;
     }
     public static final class menu {
         public static final int about=0x7f080000;
         public static final int contact=0x7f080001;
         public static final int main=0x7f080002;
-        public static final int search=0x7f080003;
-        public static final int second=0x7f080004;
+        public static final int results_detail=0x7f080003;
+        public static final int results_screen=0x7f080004;
+        public static final int search=0x7f080005;
+        public static final int second=0x7f080006;
     }
     public static final class string {
         public static final int about=0x7f050005;
@@ -69,6 +78,8 @@ public final class R {
         public static final int search_books=0x7f05000b;
         public static final int title_activity_about=0x7f050009;
         public static final int title_activity_contact=0x7f050008;
+        public static final int title_activity_results_detail=0x7f050011;
+        public static final int title_activity_results_screen=0x7f050010;
         public static final int title_activity_search=0x7f05000a;
         public static final int title_activity_second=0x7f050007;
     }

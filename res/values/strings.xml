@@ -17,8 +17,7 @@
     <string name="search">Search</string>
     <string name="error_title">Error</string>
     <string name="error_message">There was an error</string>
-    
-    
+
     <string-array name="spinner_items">
         <item>Accounting</item>
         <item>Anthropology</item>
@@ -31,6 +30,8 @@
         <item>Economics</item>
         <item>English</item>
     </string-array>
-    
+
+    <string name="title_activity_results_screen">ResultsScreen</string>
+    <string name="title_activity_results_detail">ResultsDetail</string>
 
 </resources>

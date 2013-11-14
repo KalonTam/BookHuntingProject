@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.kalon.bookhunting.MainActivity"
+            android:name="com.kalon.bookhunting.HomeScreen"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,8 +35,16 @@
             android:label="@string/title_activity_about" >
         </activity>
         <activity
-            android:name="com.kalon.bookhunting.SearchActivity"
+            android:name="com.kalon.bookhunting.SearchScreen"
             android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="com.kalon.bookhunting.ResultsScreen"
+            android:label="@string/title_activity_results_screen" >
+        </activity>
+        <activity
+            android:name="com.kalon.bookhunting.ResultsDetail"
+            android:label="@string/title_activity_results_detail" >
         </activity>
     </application>
 

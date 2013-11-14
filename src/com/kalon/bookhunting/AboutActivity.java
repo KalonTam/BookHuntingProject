@@ -21,7 +21,7 @@ public class AboutActivity extends Activity {
 		return true;
 	}
 	 public void clickBack(View view) {
-	    	Intent i = new Intent(this, MainActivity.class);
+	    	Intent i = new Intent(this, HomeScreen.class);
 	     	startActivity(i);
 	    }
 }

@@ -6,7 +6,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 
-public class MainActivity extends Activity {
+/**
+ * This represents the homescreen
+ * @author kalon  
+ */
+
+public class HomeScreen extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +28,7 @@ public class MainActivity extends Activity {
     }
     
     public void clickSearch(View view) {
-    	Intent i = new Intent(this, SearchActivity.class);
+    	Intent i = new Intent(this, SearchScreen.class);
      	startActivity(i);
     }
     

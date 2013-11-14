@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ResultsDetail" >
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="38dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTitle"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtDcPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAuthor"
+        android:layout_below="@+id/txtPubDate"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtPubDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAuthor"
+        android:layout_below="@+id/txtAuthor"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtAmaPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDcPrice"
+        android:layout_below="@+id/txtDcPrice"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+</RelativeLayout>

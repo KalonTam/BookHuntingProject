@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".SearchActivity" >
+    tools:context=".SearchScreen" >
 
     <TextView
         android:id="@+id/txtTitle"
@@ -37,12 +37,13 @@
     </EditText>
 
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/genreSpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/btnSearchAuthor"
-        android:layout_marginTop="33dp" />
+        android:layout_marginTop="33dp" 
+       />
 
     <Button
         android:id="@+id/btnSearchAuthor"
@@ -52,7 +53,8 @@
         android:layout_alignBaseline="@+id/txtSearchAuthor"
         android:layout_alignBottom="@+id/txtSearchAuthor"
         android:layout_alignParentRight="true"
-        android:text="@string/search" />
+        android:text="@string/search"
+        android:onClick="clickAuthor" />
 
     <Button
         android:id="@+id/btnTitle"
@@ -62,7 +64,8 @@
         android:layout_above="@+id/btnSearchAuthor"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="44dp"
-        android:text="@string/search" />
+        android:text="@string/search"
+        android:onClick="clickTitle" />
 
     <Button
         android:id="@+id/back"
@@ -73,5 +76,15 @@
         android:layout_alignParentTop="true"
         android:onClick="clickBack"
         android:text="@string/back" />
+
+    <Button
+        android:id="@+id/btnSearchGenre"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/genreSpinner"
+        android:layout_alignTop="@+id/genreSpinner"
+        android:text="@string/search"
+        android:onClick="clickGenre" />
 
 </RelativeLayout>
