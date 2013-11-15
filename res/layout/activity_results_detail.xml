@@ -9,49 +9,58 @@
     tools:context=".ResultsDetail" >
 
     <TextView
-        android:id="@+id/txtTitle"
+        android:id="@+id/txtAmaPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="170dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtAmaPrice"
+        android:layout_marginLeft="34dp"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/txtAuthor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtTitle"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/txtTitle"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="34dp"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/txtDcPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtAuthor"
-        android:layout_below="@+id/txtPubDate"
-        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtAuthor"
+        android:layout_marginLeft="34dp"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/txtPubDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtAuthor"
-        android:layout_below="@+id/txtAuthor"
-        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtDcPrice"
+        android:layout_marginLeft="34dp"
         android:text="TextView" />
 
-    <TextView
-        android:id="@+id/txtAmaPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtDcPrice"
-        android:layout_below="@+id/txtDcPrice"
-        android:layout_marginTop="20dp"
-        android:text="TextView" />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="14dp" />
 
 </RelativeLayout>

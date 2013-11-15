@@ -31,6 +31,7 @@ public class ResultsScreen extends ListActivity {
 	private final String KEY_DCPRICE = "dcstoreprice";
 	private final String KEY_AMAPRICE = "amastoreprice";
 	private final String KEY_SEARCHTERM = "searchterm";
+	private final String KEY_THUMBNAIL="thumbnail";
 	private String searchTerm = null;
 	private ArrayList<HashMap<String, String>> bookPosts = new ArrayList<HashMap<String, String>>();
 
@@ -77,7 +78,7 @@ public class ResultsScreen extends ListActivity {
 
 		private ByteArrayOutputStream writeToOutputStream(InputStream in)
 				throws IOException {
-			ByteArrayOutputStream outputStream = new ByteArrayOutputStream(1024);
+			ByteArrayOutputStream outputStream = new ByteArrayOutputStream(5);
 			int oneByte;
 			boolean notAtEndOfStream = (oneByte = in.read()) != -1;
 
@@ -147,6 +148,8 @@ public class ResultsScreen extends ListActivity {
 			dcPrice = dcPrice.toString();
 			String amaPrice = post.getString(KEY_AMAPRICE);
 			amaPrice = amaPrice.toString();
+			String thumbnail = post.getString(KEY_THUMBNAIL);
+			thumbnail=thumbnail.toString();
 
 			HashMap<String, String> bookPost = new HashMap<String, String>();
 			bookPost.put(KEY_ID, id);
@@ -155,6 +158,7 @@ public class ResultsScreen extends ListActivity {
 			bookPost.put(KEY_PUBDATE, pubDate);
 			bookPost.put(KEY_DCPRICE, dcPrice);
 			bookPost.put(KEY_AMAPRICE, amaPrice);
+			bookPost.put(KEY_THUMBNAIL, thumbnail);
 			return bookPost;
 		}
 
@@ -179,12 +183,14 @@ public class ResultsScreen extends ListActivity {
 		String pubDate=bookPosts.get(position).get(KEY_PUBDATE);
 		String dcPrice=bookPosts.get(position).get(KEY_DCPRICE);
 		String amaPrice =bookPosts.get(position).get(KEY_AMAPRICE);
+		String thumbnail = bookPosts.get(position).get(KEY_THUMBNAIL);
 		
 		intent.putExtra(KEY_TITLE, title);
 		intent.putExtra(KEY_AUTHOR, author);
 		intent.putExtra(KEY_PUBDATE, pubDate);
 		intent.putExtra(KEY_DCPRICE, dcPrice);
 		intent.putExtra(KEY_AMAPRICE, amaPrice);
+		intent.putExtra(KEY_THUMBNAIL, thumbnail);
 		
 		startActivity(intent);
 	}

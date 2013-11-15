@@ -24,27 +24,49 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int activereader=0x7f020000;
+        public static final int authentic_childhood=0x7f020001;
+        public static final int bookhunting=0x7f020002;
+        public static final int busicommun=0x7f020003;
+        public static final int cdnpolicework=0x7f020004;
+        public static final int culturalanthro=0x7f020005;
+        public static final int enviroecon=0x7f020006;
+        public static final int essayessentials=0x7f020007;
+        public static final int fallingman=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int infant_toddlers=0x7f02000a;
+        public static final int introtoprogramming=0x7f02000b;
+        public static final int javaprogramming=0x7f02000c;
+        public static final int medicalanthro=0x7f02000d;
+        public static final int mlahandbook=0x7f02000e;
+        public static final int olivertwist=0x7f02000f;
+        public static final int openfield30=0x7f020010;
+        public static final int phpandmysql=0x7f020011;
+        public static final int principleshtml=0x7f020012;
+        public static final int simplyaccount2012=0x7f020013;
+        public static final int sysanalysis=0x7f020014;
+        public static final int tacticsforlistening=0x7f020015;
     }
     public static final class id {
         public static final int About=0x7f090003;
         public static final int Contact=0x7f090005;
         public static final int Search=0x7f090004;
-        public static final int action_settings=0x7f090011;
+        public static final int action_settings=0x7f090012;
         public static final int back=0x7f090002;
-        public static final int btnSearchAuthor=0x7f09000f;
-        public static final int btnSearchGenre=0x7f090010;
-        public static final int btnTitle=0x7f09000c;
-        public static final int genreSpinner=0x7f09000e;
+        public static final int btnSearchAuthor=0x7f090010;
+        public static final int btnSearchGenre=0x7f090011;
+        public static final int btnTitle=0x7f09000d;
+        public static final int genreSpinner=0x7f09000f;
+        public static final int imageView1=0x7f09000b;
         public static final int textView1=0x7f090000;
         public static final int textView2=0x7f090001;
-        public static final int txtAmaPrice=0x7f09000a;
-        public static final int txtAuthor=0x7f090007;
-        public static final int txtDcPrice=0x7f090008;
-        public static final int txtPubDate=0x7f090009;
-        public static final int txtSearchAuthor=0x7f09000d;
-        public static final int txtSearchTitle=0x7f09000b;
-        public static final int txtTitle=0x7f090006;
+        public static final int txtAmaPrice=0x7f090006;
+        public static final int txtAuthor=0x7f090008;
+        public static final int txtDcPrice=0x7f090009;
+        public static final int txtPubDate=0x7f09000a;
+        public static final int txtSearchAuthor=0x7f09000e;
+        public static final int txtSearchTitle=0x7f09000c;
+        public static final int txtTitle=0x7f090007;
     }
     public static final class layout {
         public static final int activity_about=0x7f030000;
