@@ -42,8 +42,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/btnSearchAuthor"
-        android:layout_marginTop="33dp" 
-       />
+        android:layout_marginTop="33dp"
+        android:layout_toLeftOf="@+id/btnSearchAuthor" />
 
     <Button
         android:id="@+id/btnSearchAuthor"
@@ -82,9 +82,9 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/genreSpinner"
+        android:layout_alignLeft="@+id/btnSearchAuthor"
         android:layout_alignTop="@+id/genreSpinner"
-        android:text="@string/search"
-        android:onClick="clickGenre" />
+        android:onClick="clickGenre"
+        android:text="@string/search" />
 
 </RelativeLayout>

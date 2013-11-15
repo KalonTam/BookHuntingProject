@@ -31,6 +31,7 @@ public class ResultsScreen extends ListActivity {
 	private final String KEY_DCPRICE = "dcstoreprice";
 	private final String KEY_AMAPRICE = "amastoreprice";
 	private final String KEY_SEARCHTERM = "searchterm";
+	private final String KEY_GENRE= "genre";
 	private final String KEY_THUMBNAIL="thumbnail";
 	private String searchTerm = null;
 	private ArrayList<HashMap<String, String>> bookPosts = new ArrayList<HashMap<String, String>>();
@@ -115,6 +116,7 @@ public class ResultsScreen extends ListActivity {
 					for (int i = 0; i < jsonPosts.length(); i++) {
 						HashMap<String, String> bookPost = getData(jsonPosts,
 								titles, i);
+						
 
 						if (bookPost.toString().toUpperCase()
 								.contains(searchTerm)) {
@@ -148,6 +150,8 @@ public class ResultsScreen extends ListActivity {
 			dcPrice = dcPrice.toString();
 			String amaPrice = post.getString(KEY_AMAPRICE);
 			amaPrice = amaPrice.toString();
+			String genre = post.getString(KEY_GENRE);
+			genre=genre.toString();
 			String thumbnail = post.getString(KEY_THUMBNAIL);
 			thumbnail=thumbnail.toString();
 
@@ -158,6 +162,7 @@ public class ResultsScreen extends ListActivity {
 			bookPost.put(KEY_PUBDATE, pubDate);
 			bookPost.put(KEY_DCPRICE, dcPrice);
 			bookPost.put(KEY_AMAPRICE, amaPrice);
+			bookPost.put(KEY_GENRE, genre);
 			bookPost.put(KEY_THUMBNAIL, thumbnail);
 			return bookPost;
 		}
