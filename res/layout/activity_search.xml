@@ -17,56 +17,6 @@
         android:text="@string/search_books"
         android:textSize="30sp" />
 
-    <EditText
-        android:id="@+id/txtSearchTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/btnTitle"
-        android:layout_alignParentLeft="true"
-        android:ems="10" />
-
-    <EditText
-        android:id="@+id/txtSearchAuthor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
-
-    <Spinner
-        android:id="@+id/genreSpinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/btnSearchAuthor"
-        android:layout_marginTop="33dp"
-        android:layout_toLeftOf="@+id/btnSearchAuthor" />
-
-    <Button
-        android:id="@+id/btnSearchAuthor"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/txtSearchAuthor"
-        android:layout_alignBottom="@+id/txtSearchAuthor"
-        android:layout_alignParentRight="true"
-        android:text="@string/search"
-        android:onClick="clickAuthor" />
-
-    <Button
-        android:id="@+id/btnTitle"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btnSearchAuthor"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="44dp"
-        android:text="@string/search"
-        android:onClick="clickTitle" />
-
     <Button
         android:id="@+id/back"
         style="?android:attr/buttonStyleSmall"
@@ -77,14 +27,61 @@
         android:onClick="clickBack"
         android:text="@string/back" />
 
+    <Spinner
+        android:id="@+id/genreSpinner"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/txtSearchTitle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="181dp" />
+
     <Button
         android:id="@+id/btnSearchGenre"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnSearchAuthor"
+        android:layout_alignLeft="@+id/genreSpinner"
         android:layout_alignTop="@+id/genreSpinner"
+        android:layout_marginTop="59dp"
         android:onClick="clickGenre"
-        android:text="@string/search" />
+        android:text="@string/searchGenre" />
+
+    <EditText
+        android:id="@+id/txtSearchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/genreSpinner"
+        android:layout_alignLeft="@+id/back"
+        android:layout_marginBottom="79dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnTitle"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/genreSpinner"
+        android:layout_alignLeft="@+id/txtSearchTitle"
+        android:layout_marginBottom="42dp"
+        android:onClick="clickTitle"
+        android:text="@string/searchWord" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtSearchTitle"
+        android:layout_alignLeft="@+id/txtSearchTitle"
+        android:text="@string/key_word"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/genreSpinner"
+        android:layout_alignLeft="@+id/genreSpinner"
+        android:text="@string/genre"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </RelativeLayout>

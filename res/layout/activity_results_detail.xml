@@ -8,52 +8,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ResultsDetail" >
 
-    <TextView
-        android:id="@+id/txtAmaPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="170dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/txtTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/txtAmaPrice"
-        android:layout_marginLeft="34dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/txtAuthor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/txtTitle"
-        android:layout_marginLeft="34dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/txtDcPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/txtAuthor"
-        android:layout_marginLeft="34dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/txtPubDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/txtDcPrice"
-        android:layout_marginLeft="34dp"
-        android:text="TextView" />
-
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="100dp"
@@ -62,5 +16,100 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="22dp"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTitle"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="20dp"
+        android:text="@string/author"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txtAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAuthor"
+        android:layout_below="@+id/txtAuthor"
+        android:layout_marginTop="20dp"
+        android:text="@string/pubdate"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txtPubDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPubDate"
+        android:layout_below="@+id/txtPubDate"
+        android:layout_marginTop="20dp"
+        android:text="@string/dcprice"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txtDcPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDcPrice"
+        android:layout_below="@+id/txtDcPrice"
+        android:layout_marginTop="20dp"
+        android:text="@string/amaprice"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txtAmaPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="TextView" />
 
 </RelativeLayout>

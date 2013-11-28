@@ -14,7 +14,8 @@
     <string name="title_activity_search">SearchActivity</string>
     <string name="search_books">Search Books</string>
     <string name="back">Back</string>
-    <string name="search">Search</string>
+    <string name="searchGenre">Search By Genre</string>
+    <string name="searchWord">Search By Keyword</string>
     <string name="error_title">Error</string>
     <string name="error_message">There was an error</string>
 
@@ -33,5 +34,16 @@
 
     <string name="title_activity_results_screen">ResultsScreen</string>
     <string name="title_activity_results_detail">ResultsDetail</string>
+    <string name="noBookFound">Sorry no books found from that search</string>
+    <string name="aboutUs">I am a 22 year old CSIS student at Douglas College currently in my last year of studies. This was a project made for my Applied Research Class.</string>
+    <string name="contactUs">You can contact me anytime, with suggestions or comments.</string>
+    <string name="email">Email: bookhunting@gmail.com</string>
+    <string name="key_word">Keyword</string>
+    <string name="genre">Genre</string>
+    <string name="title">"Title:  "</string>
+    <string name="amaprice">"Price on Amazon: "</string>
+    <string name="author">Author:</string>
+    <string name="dcprice">Douglas Bookstore Price:</string>
+    <string name="pubdate">Publishing Date:</string>
 
 </resources>

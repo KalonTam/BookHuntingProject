@@ -48,6 +48,8 @@ public class ResultsDetail extends Activity {
 		Resources res = getResources(); 
 		image.setImageDrawable(res.getDrawable(resID));
 		
+		this.setTitle(title);
+		
 		
 	}
 

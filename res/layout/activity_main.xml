@@ -1,3 +1,4 @@
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,25 +9,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".HomeScreen" >
 
-    <Button
-        android:id="@+id/About"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="150dp"
-        android:text="@string/about"
-        android:onClick="clickAbout" />
-
-    <Button
-        android:id="@+id/Search"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/About"
-        android:layout_alignLeft="@+id/About"
-        android:layout_marginBottom="63dp"
-        android:text="@string/search_book"
-        android:onClick="clickSearch" />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/bookhunting" />
 
     <Button
         android:id="@+id/Contact"
@@ -38,14 +25,24 @@
         android:text="@string/contact" 
         android:onClick="clickContact"/>
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/Search"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/Search"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
-        android:text="@string/home"
-        android:textSize="40sp" />
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginTop="19dp"
+        android:onClick="clickSearch"
+        android:text="@string/search_book" />
+
+    <Button
+        android:id="@+id/About"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/Search"
+        android:layout_marginTop="18dp"
+        android:onClick="clickAbout"
+        android:text="@string/about" />
 
 </RelativeLayout>

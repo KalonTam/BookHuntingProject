@@ -27,6 +27,7 @@ private final String KEY_SEARCHTERM = "searchterm";
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_search);
+		this.setTitle("Search For Books");
 		fillGenreSpinner();
 
 	}
@@ -88,21 +89,6 @@ private final String KEY_SEARCHTERM = "searchterm";
 		}
 	}
 
-	public void clickAuthor(View view) {
-
-		EditText searchText = (EditText) findViewById(R.id.txtSearchAuthor);
-		String searchValue = searchText.getText().toString();
-		
-		try {
-			Intent intent = new Intent(this, ResultsScreen.class);
-			intent.putExtra(KEY_SEARCHTERM, searchValue);
-
-			startActivity(intent);
-
-		} catch (Exception e) {
-			logException(e);
-		}
-	}
 
 	public void clickGenre(View view) {
 		Spinner mySpinner = (Spinner) findViewById(R.id.genreSpinner);
